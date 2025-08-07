@@ -64,12 +64,14 @@ async function sendMessage() {
     const res = await fetch("https://ai-tools-5urn.onrender.com/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ prompt: text }),
+      body: JSON.stringify({ prompt: text })
     });
+
     const data = await res.json();
     addMessage(data.reply || "No response", "bot-msg");
   } catch (err) {
-    addMessage("Error contacting backend", "bot-msg");
+    console.error("Frontend fetch error:", err);
+    addMessage("⚠️ Error contacting backend", "bot-msg");
   }
 }
 
