@@ -79,7 +79,7 @@ async function getBotReply(userMessage) {
     const response = await fetch("https://ai-tools-5urn.onrender.com/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: userMessage })
+      body: JSON.stringify({ prompt: userMessage }) // ✅ fix key here
     });
 
     const data = await response.json();
@@ -89,6 +89,7 @@ async function getBotReply(userMessage) {
     return "⚠️ Sorry, I couldn’t reach Gemini AI.";
   }
 }
+
 
 
 
