@@ -61,7 +61,7 @@ async function sendMessage() {
   input.value = "";
 
   try {
-    const res = await fetch("https://your-backend.onrender.com/ask", {
+    const res = await fetch("https://ai-tools-5urn.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ prompt: text }),
