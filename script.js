@@ -61,7 +61,7 @@ async function sendMessage() {
   input.value = "";
 
   try {
-    const res = await fetch("https://ai-tools-5urn.onrender.com", {
+    const res = await fetch("https://ai-tools-5urn.onrender.com/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ prompt: text }),
@@ -76,7 +76,7 @@ async function sendMessage() {
 
 async function getBotReply(userMessage) {
   try {
-    const response = await fetch("http://localhost:5000/ask", {
+    const response = await fetch("https://ai-tools-5urn.onrender.com/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: userMessage })
