@@ -1,0 +1,34 @@
+[
+  {
+    "name": "ChatGPT",
+    "type": "Text Generation",
+    "features": ["Q&A", "Writing", "Code"],
+    "url": "https://chat.openai.com",
+    "tags": ["text", "chatbot", "writing"],
+    "pricing": "Free + Paid"
+  },
+  {
+    "name": "DALL·E",
+    "type": "Image Generation",
+    "features": ["Text to Image", "Inpainting"],
+    "url": "https://openai.com/dall-e",
+    "tags": ["image", "art", "creative"],
+    "pricing": "Paid"
+  },
+  {
+    "name": "Whisper",
+    "type": "Speech Recognition",
+    "features": ["Speech to Text"],
+    "url": "https://openai.com/research/whisper",
+    "tags": ["audio", "speech", "transcription"],
+    "pricing": "Free (Open Source)"
+  },
+  {
+    "name": "Runway ML",
+    "type": "Video Editing / GenAI",
+    "features": ["Text to Video", "Editing", "Effects"],
+    "url": "https://runwayml.com",
+    "tags": ["video", "creative", "text to video"],
+    "pricing": "Freemium"
+  }
+]
